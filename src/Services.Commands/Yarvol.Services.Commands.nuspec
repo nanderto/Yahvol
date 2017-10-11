@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Yarvol</authors>
+    <owners>Anderton</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>CommandTypes must implement CommandBase and ICommand in order to be utilized by a ServiceCommand Workload.</releaseNotes>
+    <copyright>Copyright © 2017</copyright>
+    <tags>Services, Commands</tags>
+  </metadata>
+</package>
