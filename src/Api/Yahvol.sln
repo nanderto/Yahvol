@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7652FAED-C09D-42C3-A4FD-447EC2DEECE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B3BD0CA8-9B10-4C72-8BDB-1C81B57DC72A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Services", "Services\Yahvol.Services.csproj", "{8196AA1B-5E95-4579-9F07-FDEBDEDD667D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Services.Tests", "Services.Tests\Yahvol.Services.Tests.csproj", "{F6B4D387-2D8F-4F30-A74B-3141C634264A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Data", "Data\Yahvol.Data.csproj", "{6B07995A-4901-4757-93F6-DE6A4ED442D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Linq.Expressions", "Linq.Expressions\Yahvol.Linq.Expressions.csproj", "{72E56AA2-EDB3-41EC-BB77-1E9E313D39B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Services.Commands", "Services.Commands\Yahvol.Services.Commands.csproj", "{4DE44359-6BF3-42B3-8A36-321AD7283D83}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ServiceCommands", "ServiceCommands\ServiceCommands.sqlproj", "{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8196AA1B-5E95-4579-9F07-FDEBDEDD667D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8196AA1B-5E95-4579-9F07-FDEBDEDD667D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8196AA1B-5E95-4579-9F07-FDEBDEDD667D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8196AA1B-5E95-4579-9F07-FDEBDEDD667D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6B4D387-2D8F-4F30-A74B-3141C634264A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B4D387-2D8F-4F30-A74B-3141C634264A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B4D387-2D8F-4F30-A74B-3141C634264A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B4D387-2D8F-4F30-A74B-3141C634264A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B07995A-4901-4757-93F6-DE6A4ED442D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B07995A-4901-4757-93F6-DE6A4ED442D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B07995A-4901-4757-93F6-DE6A4ED442D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B07995A-4901-4757-93F6-DE6A4ED442D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E56AA2-EDB3-41EC-BB77-1E9E313D39B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E56AA2-EDB3-41EC-BB77-1E9E313D39B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E56AA2-EDB3-41EC-BB77-1E9E313D39B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E56AA2-EDB3-41EC-BB77-1E9E313D39B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DE44359-6BF3-42B3-8A36-321AD7283D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE44359-6BF3-42B3-8A36-321AD7283D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE44359-6BF3-42B3-8A36-321AD7283D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE44359-6BF3-42B3-8A36-321AD7283D83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6B4D387-2D8F-4F30-A74B-3141C634264A} = {7652FAED-C09D-42C3-A4FD-447EC2DEECE0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C626EC4F-E8BF-4085-A01B-F26869ED73BB}
+	EndGlobalSection
+EndGlobal

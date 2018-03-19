@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Yahvol </authors>
+    <owners>Anderton Engineered Services</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Core Service Commands Library</summary>
+    <description>$description$</description>
+    <releaseNotes>
+      Added Throttling. To enable: (1) new ThrottleInstanceFactory().Create(); use singleton instance factory, and (2)
+      add appSetting MaxExecutingSubscribers OR set MaxExecutingSubscribers on ThrottleInstanceFactory.
+    </releaseNotes>
+    <copyright>Copyright ©  2013</copyright>
+    <tags>CQRS, ServiceCommands, Command Pattern</tags>
+  </metadata>
+</package>
