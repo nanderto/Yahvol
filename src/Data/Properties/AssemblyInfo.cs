@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Yahvol.Data")]
 [assembly: AssemblyDescription("Data access repository base classes")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Anderton")]
+[assembly: AssemblyCompany("Anderton Engineered ")]
 [assembly: AssemblyProduct("Yahvol.Data")]
 [assembly: AssemblyCopyright("Copyright © Yahvol 2013")]
 [assembly: AssemblyTrademark("")]
