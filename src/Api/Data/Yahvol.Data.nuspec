@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Anderton</authors>
+    <owners>Anderton</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Minor updates to bring it in sync with other packages added "All" method.</releaseNotes>
+    <copyright>Copyright © 2017 Anderton</copyright>
+    <tags>Data, Repository</tags>
+  </metadata>
+</package>
