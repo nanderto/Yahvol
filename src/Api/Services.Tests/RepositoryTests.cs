@@ -10,6 +10,7 @@
     using Yahvol.Services.Tests.Mocks;
 
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using System.Threading.Tasks;
 
     [TestClass]
     public class RepositoryTests
@@ -27,7 +28,18 @@
             var serviceCommandRepository = new ServiceCommandRepository(new MockServiceCommandContextInstanceFactory());
             var serviceCommand = new ServiceCommand("serialized input", DateTime.Now, "Created By", "Command Type", "user", "uniqueKey", "endpointId");
 
-            serviceCommandRepository.Save(ref serviceCommand);
+            var result = serviceCommandRepository.Save(ref serviceCommand);
+            Assert.AreEqual(1, result);
+        }
+
+        [TestMethod]
+        public async Task SaveCommandAsync()
+        {
+            var serviceCommandRepository = new ServiceCommandRepository(new MockServiceCommandContextInstanceFactory());
+            var serviceCommand = new ServiceCommand("serialized input", DateTime.Now, "Created By", "Command Type", "user", "uniqueKey", "endpointId");
+
+            var result = await serviceCommandRepository.SaveAsync(serviceCommand);
+            Assert.AreEqual(1, result);
         }
 
         [TestMethod]

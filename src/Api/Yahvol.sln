@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Services.Commands", 
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ServiceCommands", "ServiceCommands\ServiceCommands.sqlproj", "{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Linq.ExpressionsTests", "Linq.ExpressionsTests\Yahvol.Linq.ExpressionsTests.csproj", "{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,12 +56,17 @@ Global
 		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F6B4D387-2D8F-4F30-A74B-3141C634264A} = {7652FAED-C09D-42C3-A4FD-447EC2DEECE0}
+		{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE} = {7652FAED-C09D-42C3-A4FD-447EC2DEECE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C626EC4F-E8BF-4085-A01B-F26869ED73BB}
