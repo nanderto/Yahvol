@@ -53,7 +53,7 @@ namespace Yahvol.Linq.Expressions.Tests
             Assert.AreEqual(1, queryable.Where(expressions.AndAll()).Count());
         }
 
-        [TestMethod, Ignore]
+        [TestMethod]
         public void AndAll_CombineMultipleExpressions_ReturnsCorrectResults()
         {
             var testdata = GenerateTestdata2();

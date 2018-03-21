@@ -105,13 +105,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Linq.Expressions\Yahvol.Linq.Expressions.csproj">
-      <Project>{72e56aa2-edb3-41ec-bb77-1e9e313d39b7}</Project>
-      <Name>Yahvol.Linq.Expressions</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Data\Yahvol.Data.csproj">
       <Project>{6b07995a-4901-4757-93f6-de6a4ed442d1}</Project>
       <Name>Yahvol.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Linq.Expressions\Yahvol.Linq.Expressions.csproj">
+      <Project>{72e56aa2-edb3-41ec-bb77-1e9e313d39b7}</Project>
+      <Name>Yahvol.Linq.Expressions</Name>
     </ProjectReference>
     <ProjectReference Include="..\Services.Commands\Yahvol.Services.Commands.csproj">
       <Project>{4de44359-6bf3-42b3-8a36-321ad7283d83}</Project>

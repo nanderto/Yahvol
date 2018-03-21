@@ -52,7 +52,7 @@
             elapsed = stopWatch.ElapsedMilliseconds;
             Trace.WriteLine($"Elapsed time after waiting two: {elapsed}");
             // Third subscriber waits for first 2 to complete before starting, Set after 4s
-            Assert.IsFalse(manualResetEvent3.WaitOne(150));
+            Assert.IsFalse(manualResetEvent3.WaitOne(4000));
 
             elapsed = stopWatch.ElapsedMilliseconds;
             Trace.WriteLine($"Elapsed time after checking 3rd not finished: {elapsed}");

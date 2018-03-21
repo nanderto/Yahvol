@@ -8,6 +8,7 @@ namespace Yahvol.Services
 {
     using System;
     using System.Data.Entity;
+    using System.Threading.Tasks;
 
     public interface IServiceCommandContext : IDisposable
     {
@@ -18,6 +19,8 @@ namespace Yahvol.Services
         IDbSet<Subscriber> Subscribers { get; set; }
 
         int SaveChanges();
+
+        Task<int> SaveChangesAsync();
 
         DbSet<TEntity> Set<TEntity>() where TEntity : class;
     }
