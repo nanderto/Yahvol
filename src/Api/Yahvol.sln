@@ -22,6 +22,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Services.Commands", 
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ServiceCommands", "ServiceCommands\ServiceCommands.sqlproj", "{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Web", "Yahvol.Web\Yahvol.Web.csproj", "{BE2036F5-5D6E-415F-8E48-06CA3BB10445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Server", "Yahvol.Server\Yahvol.Server.csproj", "{E2989374-5CEB-475A-90AA-5599B81602F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +58,14 @@ Global
 		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BE2036F5-5D6E-415F-8E48-06CA3BB10445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2036F5-5D6E-415F-8E48-06CA3BB10445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2036F5-5D6E-415F-8E48-06CA3BB10445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2036F5-5D6E-415F-8E48-06CA3BB10445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2989374-5CEB-475A-90AA-5599B81602F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2989374-5CEB-475A-90AA-5599B81602F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2989374-5CEB-475A-90AA-5599B81602F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2989374-5CEB-475A-90AA-5599B81602F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
