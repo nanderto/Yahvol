@@ -22,9 +22,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Services.Commands", 
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ServiceCommands", "ServiceCommands\ServiceCommands.sqlproj", "{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Web", "Yahvol.Web\Yahvol.Web.csproj", "{BE2036F5-5D6E-415F-8E48-06CA3BB10445}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yahvol.Web", "Yahvol.Web\Yahvol.Web.csproj", "{BE2036F5-5D6E-415F-8E48-06CA3BB10445}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Server", "Yahvol.Server\Yahvol.Server.csproj", "{E2989374-5CEB-475A-90AA-5599B81602F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yahvol.Server", "Yahvol.Server\Yahvol.Server.csproj", "{E2989374-5CEB-475A-90AA-5599B81602F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

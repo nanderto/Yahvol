@@ -15,6 +15,7 @@ namespace Yahvol.Web
 {
     public class Program
     {
+
         public static async Task Main(string[] args)
         {
             var silo = new SiloHostBuilder()
@@ -25,14 +26,39 @@ namespace Yahvol.Web
 
             var client = silo.Services.GetRequiredService<IClusterClient>();
 
-            var webHost = new WebHostBuilder()
+            var webHostBuilder = CreateWebHostBuilder(args, client);
+            var biltWebHost = webHostBuilder.Build();
+            await biltWebHost.RunAsync();
+        }
+
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args, IClusterClient client) =>
+            WebHost.CreateDefaultBuilder(args)
                 .ConfigureServices(services =>
                     services
                         .AddSingleton<IGrainFactory>(client)
                         .AddSingleton<IClusterClient>(client))
-                .UseStartup<Startup>()
-                // Other ASP.NET configuration...
-                .Build().RunAsync();
-        }
+                .UseStartup<Startup>();
+
+
+        //public static async Task Main(string[] args)
+        //{
+        //    var silo = new SiloHostBuilder()
+        //        .UseLocalhostClustering()
+        //        .Build();
+
+        //    await silo.StartAsync();
+
+        //    var client = silo.Services.GetRequiredService<IClusterClient>();
+
+        //    var webHost = new WebHostBuilder()
+        //        .ConfigureServices(services =>
+        //            services
+        //                .AddSingleton<IGrainFactory>(client)
+        //                .AddSingleton<IClusterClient>(client))
+        //        .UseStartup<Startup>()
+        //        // Other ASP.NET configuration...
+        //        .Build();
+        //    webHost.Run();
+        //}
     }
 }
