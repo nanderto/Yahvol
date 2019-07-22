@@ -13,12 +13,12 @@
         
         private TimeSpan timeToExpire;
         
-        public MockWorkload(ManualResetEvent manualResetEvent)
+        public MockWorkload(ManualResetEvent manualResetEvent) : base (default(RetryPolicy))
         {
             this.manualResetEvent = manualResetEvent;
         }
 
-        public MockWorkload(ManualResetEvent manualResetEvent, TimeSpan timeToExpire, int numberofExceptionsToThrow)
+        public MockWorkload(ManualResetEvent manualResetEvent, TimeSpan timeToExpire, int numberofExceptionsToThrow) : base(default(RetryPolicy))
         {
             // TODO: Complete member initialization
             this.manualResetEvent = manualResetEvent;
