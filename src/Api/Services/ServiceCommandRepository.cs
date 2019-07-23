@@ -68,7 +68,7 @@ namespace Yahvol.Services
         {
             using (var context = this.contextFactory.Create())
             {
-                context.LogEntries.Add(entry);
+                context.LogEntries.Add (entry);
                 context.SaveChanges();
             }
         }
@@ -86,6 +86,20 @@ namespace Yahvol.Services
                 context.SaveChanges();
 
                 return serviceCommand.Id;
+            }
+        }
+
+        public async Task<int> SaveAsync(ServiceCommand serviceCommand)
+        {
+            using (var context = this.contextFactory.Create())
+            {
+                foreach (var subscriber in serviceCommand.Subscribers)
+                {
+                    context.Subscribers.Add(subscriber);
+                }
+
+                context.ServiceCommands.Add(serviceCommand);
+                return await context.SaveChangesAsync();
             }
         }
 

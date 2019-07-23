@@ -22,6 +22,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Services.Commands", 
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ServiceCommands", "ServiceCommands\ServiceCommands.sqlproj", "{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Linq.ExpressionsTests", "Linq.ExpressionsTests\Yahvol.Linq.ExpressionsTests.csproj", "{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Web.Http", "..\Http\Web.Http\Yahvol.Web.Http.csproj", "{3BCA4959-0169-4FB6-A119-64C9C2B01AAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Web.HttpTests", "..\Http\Web.HttpTests\Yahvol.Web.HttpTests.csproj", "{3809A2E0-F53C-4EC9-A825-11BC7BB42974}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Web.Http.Tests", "..\Http\Web.Http.Tests\Yahvol.Web.Http.Tests.csproj", "{76F7DD10-FC7F-4C21-AE2D-A99D579E607C}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet472Sample", "AspNet472Sample\AspNet472Sample.csproj", "{B759D84B-50DE-4D0B-A872-A033ADAB300C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet472Sample.Tests", "AspNet472Sample.Tests\AspNet472Sample.Tests.csproj", "{220FE838-F18F-413E-9B50-F785DDF364BF}"
@@ -58,6 +66,22 @@ Global
 		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE5146C9-BDD6-4035-AEA4-2BE9EF387F94}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BCA4959-0169-4FB6-A119-64C9C2B01AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BCA4959-0169-4FB6-A119-64C9C2B01AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BCA4959-0169-4FB6-A119-64C9C2B01AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BCA4959-0169-4FB6-A119-64C9C2B01AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3809A2E0-F53C-4EC9-A825-11BC7BB42974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3809A2E0-F53C-4EC9-A825-11BC7BB42974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3809A2E0-F53C-4EC9-A825-11BC7BB42974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3809A2E0-F53C-4EC9-A825-11BC7BB42974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76F7DD10-FC7F-4C21-AE2D-A99D579E607C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F7DD10-FC7F-4C21-AE2D-A99D579E607C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F7DD10-FC7F-4C21-AE2D-A99D579E607C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F7DD10-FC7F-4C21-AE2D-A99D579E607C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B759D84B-50DE-4D0B-A872-A033ADAB300C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B759D84B-50DE-4D0B-A872-A033ADAB300C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B759D84B-50DE-4D0B-A872-A033ADAB300C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -72,6 +96,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F6B4D387-2D8F-4F30-A74B-3141C634264A} = {7652FAED-C09D-42C3-A4FD-447EC2DEECE0}
+		{4DE3DE11-855A-4C9C-934C-B1B09CB4F9BE} = {7652FAED-C09D-42C3-A4FD-447EC2DEECE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C626EC4F-E8BF-4085-A01B-F26869ED73BB}

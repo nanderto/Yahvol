@@ -3,7 +3,7 @@
     using System.Data.Entity;
     using System.Linq;
     using System.Threading;
-
+    using System.Threading.Tasks;
     using Yahvol.Services;
 
     public class MockServiceCommandContext : IServiceCommandContext
@@ -69,6 +69,16 @@
             }
 
             return this.inMemoryDatabase.Count();
+        }
+
+        public async Task<int> SaveChangesAsync()
+        {
+            foreach (var subscriber in this.Subscribers.Where(subscriber => subscriber.ServiceCommandId == 0))
+            {
+                subscriber.ServiceCommandId = this.ServiceCommands.OrderByDescending(u => u.Id).First().Id;
+            }
+
+            return await Task.Run<int>(() => this.inMemoryDatabase.Count());
         }
 
         public DbSet<TEntity> Set<TEntity>() where TEntity : class
