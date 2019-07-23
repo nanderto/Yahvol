@@ -21,7 +21,6 @@
     <TargetLanguage>CS</TargetLanguage>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SqlServerVerification>False</SqlServerVerification>
-    <GenerateCreateScript>False</GenerateCreateScript>
     <IncludeSchemaNameInFileName>True</IncludeSchemaNameInFileName>
     <IsReadyRollProject>True</IsReadyRollProject>
     <ReadyRollToolsVersion>1.12</ReadyRollToolsVersion>
@@ -33,7 +32,6 @@
     <GenerateSqlPackage>True</GenerateSqlPackage>
     <PackageScriptBatchExecutionStrategy>WrapInExecuteWithSingleSetNoExec</PackageScriptBatchExecutionStrategy>
     <TargetDatabaseSet>True</TargetDatabaseSet>
-    <ExcludeObjectsFromSync />
     <IncludeObjectsInDataSync />
     <DeployChangesInitialImportDone>False</DeployChangesInitialImportDone>
     <DeployChangesExecutionOrder />
