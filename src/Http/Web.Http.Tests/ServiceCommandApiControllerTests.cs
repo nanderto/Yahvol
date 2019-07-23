@@ -18,7 +18,7 @@ namespace Yahvol.Web.Http.Tests
         [TestMethod]
         public void GetTest()
         {
-            var instanceFactory = new MockServiceCommandContextInstanceFactory() as IInstanceFactory<IServiceCommandService>;
+            var instanceFactory = (IInstanceFactory<IServiceCommandService>)new MockServiceCommandContextInstanceFactory();//as IInstanceFactory<IServiceCommandService>;
             
             var controller = new MockServiceCommandController(instanceFactory);
             controller.SetupControllerRequest("http://localhost/api/Mock");
