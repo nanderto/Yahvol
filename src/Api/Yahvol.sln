@@ -30,6 +30,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Web.HttpTests", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahvol.Web.Http.Tests", "..\Http\Web.Http.Tests\Yahvol.Web.Http.Tests.csproj", "{76F7DD10-FC7F-4C21-AE2D-A99D579E607C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet472Sample", "AspNet472Sample\AspNet472Sample.csproj", "{B759D84B-50DE-4D0B-A872-A033ADAB300C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet472Sample.Tests", "AspNet472Sample.Tests\AspNet472Sample.Tests.csproj", "{220FE838-F18F-413E-9B50-F785DDF364BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +82,14 @@ Global
 		{76F7DD10-FC7F-4C21-AE2D-A99D579E607C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76F7DD10-FC7F-4C21-AE2D-A99D579E607C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76F7DD10-FC7F-4C21-AE2D-A99D579E607C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B759D84B-50DE-4D0B-A872-A033ADAB300C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B759D84B-50DE-4D0B-A872-A033ADAB300C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B759D84B-50DE-4D0B-A872-A033ADAB300C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B759D84B-50DE-4D0B-A872-A033ADAB300C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220FE838-F18F-413E-9B50-F785DDF364BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220FE838-F18F-413E-9B50-F785DDF364BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220FE838-F18F-413E-9B50-F785DDF364BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220FE838-F18F-413E-9B50-F785DDF364BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

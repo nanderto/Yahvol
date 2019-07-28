@@ -144,7 +144,10 @@ namespace Yahvol.Services.Tests
             var manualResetEvent2 = new ManualResetEvent(false);
             var manualResetEvent3 = new ManualResetEvent(false);
 
-            serviceCommandService.AddCommand(command).WithWorkload(new MockWorkload(manualResetEvent1), new TimeSpan(0, 0, 0, 30)).WithWorkload(new MockWorkload(manualResetEvent2), new TimeSpan(0, 0, 0, 30)).WithWorkload(new MockWorkload(manualResetEvent3), new TimeSpan(0, 0, 0, 30));
+            serviceCommandService.AddCommand(command)
+                .WithWorkload(new MockWorkload(manualResetEvent1), new TimeSpan(0, 0, 0, 30))
+                .WithWorkload(new MockWorkload(manualResetEvent2), new TimeSpan(0, 0, 0, 30))
+                .WithWorkload(new MockWorkload(manualResetEvent3), new TimeSpan(0, 0, 0, 30));
 
             command = serviceCommandService.Run<MockCommand>();
 
@@ -175,7 +178,9 @@ namespace Yahvol.Services.Tests
             var manualResetEvent1 = new ManualResetEvent(false);
             var manualResetEvent2 = new ManualResetEvent(false);
 
-            serviceCommandService.AddCommand(command).WithWorkload(new MockWorkload(manualResetEvent1, 2), new TimeSpan(0, 0, 0, 30)).WithWorkload(new MockWorkload(manualResetEvent2, 1), new TimeSpan(0, 0, 0, 30));
+            serviceCommandService.AddCommand(command)
+                .WithWorkload(new MockWorkload(manualResetEvent1, 2), new TimeSpan(0, 0, 0, 30))
+                .WithWorkload(new MockWorkload(manualResetEvent2, 1), new TimeSpan(0, 0, 0, 30));
 
             command = serviceCommandService.Run<MockCommand>();
 

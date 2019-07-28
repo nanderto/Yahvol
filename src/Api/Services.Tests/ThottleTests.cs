@@ -26,7 +26,8 @@
 			var manualResetEvent3 = new ManualResetEvent(false);
             var stopWatch = new Stopwatch();
             stopWatch.Start();
-			new ServiceCommandService(contextFactory, throttleInstanceFactory.Create()).AddCommand(command)
+			new ServiceCommandService(contextFactory, throttleInstanceFactory.Create())
+                .AddCommand(command)
 				.WithWorkload(new MockWorkload(manualResetEvent1, 0, 2000), new TimeSpan(0, 0, 0, 30))
 				.WithWorkload(new MockWorkload(manualResetEvent2, 0, 2000), new TimeSpan(0, 0, 0, 30))
 				.Run<MockCommand>();
