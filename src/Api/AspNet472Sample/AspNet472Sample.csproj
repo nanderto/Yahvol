@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Akka, Version=1.1.1.27, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Akka.1.1.1\lib\net45\Akka.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -53,6 +56,9 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.1.36.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.1.36\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.Entity" />
@@ -161,7 +167,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\DoSomethingElseValuesWorkload.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SaveValuesCommand.cs" />
+    <Compile Include="Controllers\SaveValuesWorkload.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -253,6 +262,14 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Http\Web.Http\Yahvol.Web.Http.csproj">
+      <Project>{3bca4959-0169-4fb6-a119-64c9c2b01aad}</Project>
+      <Name>Yahvol.Web.Http</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Yahvol.Data.csproj">
+      <Project>{6b07995a-4901-4757-93f6-de6a4ed442d1}</Project>
+      <Name>Yahvol.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Services.Commands\Yahvol.Services.Commands.csproj">
       <Project>{4de44359-6bf3-42b3-8a36-321ad7283d83}</Project>
       <Name>Yahvol.Services.Commands</Name>

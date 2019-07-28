@@ -7,6 +7,7 @@ using System.Web.Http;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AspNet472Sample;
 using AspNet472Sample.Controllers;
+using Yahvol.Services;
 
 namespace AspNet472Sample.Tests.Controllers
 {
@@ -17,7 +18,7 @@ namespace AspNet472Sample.Tests.Controllers
         public void Get()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            ValuesController controller = new ValuesController(new ServiceCommandContextInstanceFactory(), new ServiceCommandLoggerInstanceFactory());
 
             // Act
             IEnumerable<string> result = controller.Get();
@@ -33,7 +34,8 @@ namespace AspNet472Sample.Tests.Controllers
         public void GetById()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            ValuesController controller = new ValuesController(new ServiceCommandContextInstanceFactory(), new ServiceCommandLoggerInstanceFactory());
+
 
             // Act
             string result = controller.Get(5);
@@ -46,7 +48,7 @@ namespace AspNet472Sample.Tests.Controllers
         public void Post()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            ValuesController controller = new ValuesController(new ServiceCommandContextInstanceFactory(), new ServiceCommandLoggerInstanceFactory());
 
             // Act
             controller.Post("value");
@@ -58,7 +60,8 @@ namespace AspNet472Sample.Tests.Controllers
         public void Put()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            ValuesController controller = new ValuesController(new ServiceCommandContextInstanceFactory(), new ServiceCommandLoggerInstanceFactory());
+
 
             // Act
             controller.Put(5, "value");
@@ -70,7 +73,8 @@ namespace AspNet472Sample.Tests.Controllers
         public void Delete()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            ValuesController controller = new ValuesController(new ServiceCommandContextInstanceFactory(), new ServiceCommandLoggerInstanceFactory());
+
 
             // Act
             controller.Delete(5);

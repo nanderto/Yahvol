@@ -35,6 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework">
       <HintPath>..\packages\MSTest.TestFramework.1.2.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
@@ -109,9 +115,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Http\Web.Http\Yahvol.Web.Http.csproj">
+      <Project>{3bca4959-0169-4fb6-a119-64c9c2b01aad}</Project>
+      <Name>Yahvol.Web.Http</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AspNet472Sample\AspNet472Sample.csproj">
       <Project>{B759D84B-50DE-4D0B-A872-A033ADAB300C}</Project>
       <Name>AspNet472Sample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Yahvol.Services.csproj">
+      <Project>{8196aa1b-5e95-4579-9f07-fdebdedd667d}</Project>
+      <Name>Yahvol.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
